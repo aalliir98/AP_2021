@@ -1,0 +1,47 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:64:p, par t {comp button2:::p::p, comp button1:::p:123:p}, space ::34:x, par l {comp button4:::::x, seq {space :0:0:x, comp button3:::p:123:p}}, space :p:54:p}, seq {space :p:115:p, comp label1:::p::p, space ::115:x}}"
+			"$verticalGroup": "par l {seq l {space :p:36:p, comp label1:::p:40:p, space :p:39:p, par b {comp button3::b:p:40:p, comp button1::b:p:40:p}, space ::44:x, par b {comp button2::b:p:40:p, comp button4::b:p:40:p}, space :p:64:p}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"resizable": false
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "choose your services:"
+				"font": new java.awt.Font( "Arial", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "restaurant"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "smoking room"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "bed set"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "hotel"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 335 )
+		} )
+	}
+}

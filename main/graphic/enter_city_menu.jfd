@@ -1,0 +1,48 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {par l {seq {space :p:68:p, comp label1:::::x, space s:p::p, comp textField1:::p:162:p}, seq l {space :p:89:p, comp button1:::p:85:p, space :p:49:p, comp button2:::p:85:p}}, space :p:51:p}, seq t {comp label2:::p::p, space :p:118:p}}"
+			"$verticalGroup": "par l {seq t {space :p:14:p, comp label2::::51:x, space :p:34:p, par b {seq b {space :2:2:p, comp label1::::40:x}, comp textField1::b:p:40:p}, space :p:30:p, par l {comp button2::::41:x, comp button1::::41:x}, space :p:41:p}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"$sizePolicy": 1
+			"$locationPolicy": 1
+			"alwaysOnTop": true
+			"defaultCloseOperation": 3
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "city name: "
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"text": "city name"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "textField1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Enter city name:"
+				"font": new java.awt.Font( "Arial", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "ok"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "cancel"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 40, 0 )
+			"size": new java.awt.Dimension( 370, 285 )
+		} )
+	}
+}

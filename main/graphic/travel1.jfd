@@ -1,0 +1,87 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:56:p, par l:::p {comp label1::l:::x, comp label2::t:::x, comp label3::t:::x, comp label5::l:::x, comp label4::t:::x, comp label6::l:::x, comp label7::l:::x}, space s:::p, par l {comp textField7::::200:x, comp textField6::::200:x, comp textField4::::200:x, comp textField3::::200:x, comp textField2:::::x, comp textField5::::200:x, comp textField1::l::200:x}, space :p:87:p}, seq l {space :p:115:p, comp button1:::p:90:p, space :p:95:p, comp button2:::p:90:p, space ::148:x}}"
+			"$verticalGroup": "par l {seq l {space :p:30:p, par l:::p {comp label1::::40:x, comp textField1::::40:x}, space :18:18:p, par b {comp textField2::b:p:40:p, comp label2::b:p:40:p}, space s:::p, par b {comp label3::b:p:40:p, comp textField3::b:p:40:p}, space s:::p, par b {comp textField4::b:p:40:p, comp label4::b::40:x}, space s:::p, par b {comp label5::b:p:40:p, comp textField5::b:p:40:p}, space s:::p, par l:::p {comp label6::::40:x, comp textField6::::40:x}, space s:::p, par l:::p {comp label7::::40:x, comp textField7::::40:x}, space :p:33:p, par l:::p {comp button1::::40:x, comp button2::::40:x}, space ::19:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"title": "travel"
+			"resizable": false
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "destination terminal's name:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "origin terminal's name:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "destination city:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "driver's name:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "vehicle's id:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "vehicle's name:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "travel date: (dd/mm/yy)"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField4"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField5"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField6"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField7"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "ok"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "cancel"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 540, 550 )
+		} )
+	}
+}

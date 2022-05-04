@@ -1,0 +1,84 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp panel1:::p::p, space :0:2:x}, seq t {space ::225:x, par t {comp label2:::p:205:p, comp label1:::p:205:p}, space :p:223:p}}"
+			"$verticalGroup": "par l {seq l {space :p:25:p, comp label1:::p:40:p, space :p:33:p, comp label2:::p:37:p, space :p:27:p, comp panel1:::::x, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "main menu"
+			"defaultCloseOperation": 3
+			"resizable": false
+			"visible": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"font": new java.awt.Font( "Arial", 1, 16 )
+				"text": "welcome to your country"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:10:p, par l {comp button2:::p::p, comp button1:::::x}, space :::p, par l:::p {comp button4:::::x, comp button3:::::x}, space :::p, par l:::p {comp button6:::::x, comp button5:::::x}, space :::p, par l {comp button7::::66:x, comp button9::::66:x}, space :p:10:p}}"
+				"$verticalGroup": "par l {seq l {space :p:12:p, par l {seq {par b {comp button5::b:p:72:p, comp button1::b:p:72:p, comp button3::b:p:72:p}, space :0:0:x}, comp button7:::::x}, space :::p, par b {comp button6::b:p:72:p, comp button9::t:p:72:p, comp button2::b:p:72:p, comp button4::b:p:72:p}, space :p:24:p}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "build new city"
+					"font": new java.awt.Font( "sansserif", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "delete all informations"
+					"font": new java.awt.Font( "sansserif", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "Enter city menu"
+					"font": new java.awt.Font( "sansserif", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button4"
+					"text": "Financial Management"
+					"font": new java.awt.Font( "sansserif", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button5"
+					"text": "show city's information"
+					"font": new java.awt.Font( "sansserif", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button6"
+					"text": "show country's information"
+					"font": new java.awt.Font( "sansserif", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button7"
+					"text": "save"
+					"font": new java.awt.Font( "sansserif", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button9"
+					"text": "exit"
+					"font": new java.awt.Font( "sansserif", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button9ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"font": new java.awt.Font( "Arial", 1, 16 )
+				"text": "what do you want to do?"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 10 )
+			"size": new java.awt.Dimension( 655, 390 )
+		} )
+	}
+}

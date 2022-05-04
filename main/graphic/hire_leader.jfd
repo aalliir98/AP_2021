@@ -1,0 +1,70 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:56:p, par l {comp button1:::p:130:p, comp button3:::::x}}, seq {space :::x, comp label2:::p::p}}, par l {seq {space ::153:x, par l {comp button2::t:p:131:p, comp button4::t:p:131:p}, space :p:63:p}, seq l {space :::p, comp textField1:::p:224:p, space ::117:x}}}, seq {par l {seq l {space :p:197:p, comp button5:::p:131:p}, seq l {space :p:205:p, comp label1:::p::p}, seq l {space :p:158:p, comp button6:::p:80:p, space :p:86:p, comp button7:::p:80:p}}, space ::129:x}}"
+			"$verticalGroup": "par l {seq l {space :p:44:p, comp label1:::p:47:p, space :p:45:p, par b {comp button1::b:p:49:p, comp button2::b:p:49:p}, space :p:20:p, comp button5:::p:49:p, space s:::p, par b {comp button4::b:p:49:p, comp button3::b:p:49:p}, space :p:36:p, par l:::p {comp label2::::41:x, comp textField1::::41:x}, space s:::p, par b {comp button7::b:p:37:p, comp button6::b:p:37:p}, space ::35:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Sailor"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Pilot"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Bus driver"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "Locomotive"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"text": "Crew"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "which leader?"
+				"font": new java.awt.Font( "Arial", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "terminal name:"
+				"font": new java.awt.Font( "Arial", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"text": "ok"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button7"
+				"text": "cancel"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 535, 520 )
+		} )
+	}
+}

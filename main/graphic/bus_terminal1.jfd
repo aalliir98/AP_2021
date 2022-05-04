@@ -1,0 +1,53 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::110:x, comp button1:::p:73:p, space :p:83:p, comp button2:::p:82:p, space :p:100:p}, seq l {space ::66:x, par l {seq l {par l {comp label2::l::93:x, comp label3::l:::x}, space s:::x, par l:::p {comp textField3::::169:x, comp textField2::::169:x}}, seq l {comp label1:::::x, space s:::x, comp textField1::::169:x}}, space ::102:x}}"
+			"$verticalGroup": "par l {seq l {space ::49:x, par b {comp label1::b::40:x, comp textField1::b::40:x}, space s::20:x, par l:::p {comp label2::::40:x, comp textField2::::40:x}, space s:::x, par l {comp label3::::40:x, comp textField3:::::x}, space ::42:x, par b {comp button1::b:p:40:p, comp button2::b:p:40:p}, space :p:32:p}}"
+		} ) {
+			name: "this"
+			"visible": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "terminal name:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "address:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "area:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "ok"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "cancel"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 450, 355 )
+		} )
+	}
+}

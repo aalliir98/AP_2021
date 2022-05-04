@@ -1,0 +1,29 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space ::40:x, par l {comp label1:::p::p, seq l {space :p:96:p, comp button1:::p:89:p}}, space ::39:x}}"
+			"$verticalGroup": "par l {seq t {space :p:65:p, comp label1:::p::p, space :p:37:p, comp button1:::p:40:p, space ::42:x}}"
+		} ) {
+			name: "this"
+			"resizable": false
+			"visible": true
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "cancel"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "click cancel button to cancel showing"
+				"font": new java.awt.Font( "Arial", 1, 16 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 365, 235 )
+		} )
+	}
+}

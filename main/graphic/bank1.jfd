@@ -1,0 +1,35 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:51:p, comp button1:::p:120:p, space :p:47:p, comp button2:::p::p, space ::48:x}, seq t {space ::177:x, comp label1:::p::p, space :p:169:p}}"
+			"$verticalGroup": "par l {seq l {space :p:23:p, comp label1:::p:40:p, space :p:44:p, par b {comp button1::b:p:40:p, comp button2::b:p:40:p}, space ::61:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"resizable": false
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "build bank"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "enter to bank"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "bank"
+				"font": new java.awt.Font( "Arial", 1, 16 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 385, 240 )
+		} )
+	}
+}

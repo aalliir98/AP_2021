@@ -1,0 +1,63 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:84:p, par l:::p {seq {comp label4:::p::p, space s:::p, comp textField4::::166:x}, seq {par l {comp label1::l:p::p, comp label2::l:p::p, comp label3::l:p::p}, space :p:56:p, par l:::p {comp textField1::::167:x, comp textField2::::167:x, comp textField3::::167:x}}}}, seq l {space :p:128:p, comp button1:::p:85:p, space :p:55:p, comp button2:::p:85:p}}, space ::77:x}}"
+			"$verticalGroup": "par l {seq l {space :p:54:p, par l:::p {comp label1::::40:x, comp textField1::::40:x}, space s:::p, par l:::p {comp label2::::40:x, comp textField2::::40:x}, space s:::p, par b {comp label3::b:p:40:p, comp textField3::b:p:39:p}, space s:::p, par l:::p {comp label4::::40:x, comp textField4::::40:x}, space :p:35:p, par l {comp button1:::p:40:p, comp button2:::::x}, space ::44:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"resizable": false
+			"defaultCloseOperation": 3
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "hotel name:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "address:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "star:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "number of rooms:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField4"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "ok"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "cancel"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 460, 420 )
+		} )
+	}
+}

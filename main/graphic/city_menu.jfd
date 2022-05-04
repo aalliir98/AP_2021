@@ -1,0 +1,96 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {seq l {par l {par l:::p {seq l {comp button1:::p:126:p, space :::p, comp button2:::::x}, seq t {comp button6:::p:146:p, space :::p, comp button5:::p::p}}, comp button9::l:p:245:p}, space ::113:x, par l {seq t {comp button10:::::x, space :p:127:p}, seq {par l {seq {comp button7:::p:99:p, space :::p, comp button8:::p::p}, comp button4::l:p:214:p, comp button3::t:p:105:p}, space :p:16:p}}}, seq l {space :p:199:p, comp label2:::p::p, space :::x}, seq t {space :0:215:x, comp label1:::p::p, space :p:216:p}}}, seq t {space ::258:x, comp button11:::p:107:p, space :p:233:p}}"
+			"$verticalGroup": "par l {seq l {space :p:23:p, comp label1:::p:42:p, space u:::p, comp label2:::p:42:p, par l {seq l {space :p:29:p, par b {comp button1::b:p:57:p, comp button2::b:p:57:p}, space u:::p, par l {comp button4:::p:57:p, comp button9::l:p:57:p}}, seq l {space :p:31:p, par b {comp button7::b:p:57:p, comp button8::b:p:57:p}}}, space ::12:x, par l {par b {comp button10::b:p:57:p, comp button3::b:p:57:p}, par b {comp button5::b:p:57:p, comp button6::b:p:57:p}}, space u:::p, comp button11:::p:47:p, space ::22:x}}"
+		} ) {
+			name: "this"
+			"title": "city menu"
+			"defaultCloseOperation": 3
+			"visible": true
+			"resizable": false
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "welcome to your city"
+				"font": new java.awt.Font( "Arial", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "what do you want to do?"
+				"font": new java.awt.Font( "Arial", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Build terminal"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Buy vehicle"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Hire leader"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "show information of terminals"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"text": "build hotel"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"text": "build room for hotel"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button7"
+				"text": "add travel"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button8"
+				"text": "show travels"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button8ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button9"
+				"text": "show information of hotels"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button9ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button10"
+				"text": "bank"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button10ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button11"
+				"text": "exit"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button11ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 140, 40 )
+			"size": new java.awt.Dimension( 600, 450 )
+		} )
+	}
+}

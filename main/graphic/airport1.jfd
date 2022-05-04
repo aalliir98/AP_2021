@@ -1,0 +1,79 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {par t {seq l {par l {seq {space :p:82:p, comp label5:::p:119:p}, seq l {space :p:103:p, comp button1:::p:90:p}}, par l {seq {space :p:72:p, comp button2:::p:90:p}, seq l {space s:::p, comp textField3:::p:168:p}}, space :0:0:x}, seq {space :83:83:p, par t {seq {par t {comp label4:::p:119:p, comp label3:::p:119:p}, space s:::p, par l {comp textField1:::::x, comp textField2:::::x}}, seq l {par l {comp label2:::p::p, comp label1:::p::p}, space s:::p, par l {comp spinner1:::p:88:p, seq l {comp radioButton1:::p::p, space s:::p, comp radioButton2:::p::p}}, space :0:0:x}}}}, space :p:76:p}}"
+			"$verticalGroup": "par l {seq l {par l {seq {space :p:33:p, par b {comp radioButton1::b:p::p, comp radioButton2::b:p::p}, space :p:25:p}, seq t {space :::p, comp label1:::p:40:p, space s:::p}}, par b {comp label2::b:p:33:p, comp spinner1::b:p:33:p}, space s:::p, par b {comp textField1::b:p:33:p, comp label3::b::33:x}, space s:::p, par b {comp label4::b:p:33:p, comp textField2::b::33:x}, space s:::p, par b {comp label5::b:p:33:p, comp textField3::b::33:x}, space ::44:x, par b {comp button2::b:p:40:p, comp button1::b:p:40:p}, space :p:33:p}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"visible": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "type:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton1"
+				"text": "true"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton2"
+				"text": "false"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "number of runway:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "spinner1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "terminal name:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "address:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "area:"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "ok"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "cancel"
+				"font": new java.awt.Font( "Arial", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 465, 420 )
+		} )
+	}
+}

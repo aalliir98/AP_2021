@@ -1,0 +1,49 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:25:p, par l:::p {comp button3:::::x, comp button1:::::x}, space :p:33:p, par l {comp button2:::p::p, comp button4:::::x}, space ::25:x}, seq t {space ::67:x, comp label1:::p:174:p, space :p:52:p}}"
+			"$verticalGroup": "par l {seq t {space :p:30:p, comp label1:::p:53:p, space :p:34:p, par b {comp button1::b:p:46:p, comp button2::b:p:46:p}, space s:::p, par l:::p {comp button3::::46:x, comp button4::::46:x}, space ::41:x}}"
+		} ) {
+			name: "this"
+			"title": "terminal"
+			"defaultCloseOperation": 3
+			"resizable": false
+			"visible": true
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "airport"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "shipping port"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "bus terminal"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "train station"
+				"font": new java.awt.Font( "Arial", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "choose your terminal"
+				"font": new java.awt.Font( "Arial", 1, 16 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 0 )
+			"size": new java.awt.Dimension( 295, 300 )
+		} )
+	}
+}
